@@ -533,7 +533,7 @@ class GPGBase(object):
         if self.homedir: cmd.append('--homedir "%s"' % self.homedir)
 
         if self.keyring:
-            cmd.append('--no-default-keyring --keyring %s' % self.keyring)
+            cmd.append('--keyring %s' % self.keyring)
         if self.secring:
             cmd.append('--secret-keyring %s' % self.secring)
 
